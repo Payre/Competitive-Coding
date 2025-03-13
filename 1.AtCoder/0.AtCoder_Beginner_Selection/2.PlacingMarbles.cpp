@@ -4,3 +4,21 @@
 // Constraints
 
 // Each of s1​, s2​ and s3​ is either 1 or 0. 
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int s, si[2], c=0;
+    cin >> s;
+    int z = s;
+    for(int i=2; i>=0; i--){
+        si[i] = z % 10;
+        z = z/10;
+        if(si[i]==1){
+            c++;
+        }
+    }
+    cout << c;
+    return 0;
+}
